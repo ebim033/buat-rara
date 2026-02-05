@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Verification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="captcha-box">
+  <div class="header">
+    <p>Select all images with</p>
+    <h2>J4M3T</h2>
+  </div>
+
+ <div class="grid">
+  <div class="img-box" onclick="toggle(this)">
+    <img src="img/me1.jpg">
+    <span class="check"></span>
+  </div>
+  <div class="img-box" onclick="toggle(this)">
+    <img src="img/me2.jpg">
+    <span class="check"></span>
+  </div>
+  <div class="img-box" onclick="toggle(this)">
+    <img src="img/me3.jpg">
+    <span class="check"></span>
+  </div>
+
+  <div class="img-box" onclick="toggle(this)">
+    <img src="img/me4.jpg">
+    <span class="check"></span>
+  </div>
+  <div class="img-box" onclick="toggle(this)">
+    <img src="img/me1.jpg">
+    <span class="check"></span>
+  </div>
+  <div class="img-box" onclick="toggle(this)">
+    <img src="img/me2.jpg">
+    <span class="check"></span>
+  </div>
+
+  <div class="img-box" onclick="toggle(this)">
+    <img src="img/me3.jpg">
+    <span class="check"></span>
+  </div>
+  <div class="img-box" onclick="toggle(this)">
+    <img src="img/me4.jpg">
+    <span class="check"></span>
+  </div>
+  <div class="img-box" onclick="toggle(this)">
+    <img src="img/me1.jpg">
+    <span class="check"></span>
+  </div>
+ </div>
+ 
+  <div class="captcha-footer">
+  <div class="icons">
+    <span class="icon" title="Reload">↻</span>
+    <span class="icon" title="Audio">🎧</span>
+    <span class="icon" title="Info">ⓘ</span>
+  </div>
+  <button class="verify-btn" onclick="verify()">VERIFY</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

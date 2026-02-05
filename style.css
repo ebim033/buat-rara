@@ -1,0 +1,141 @@
+body {
+  background:#f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+.captcha-box {
+  width: 360px;
+  background: #fff;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+}
+
+.header {
+  background: #4285f4;
+  color: white;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.grid img.selected {
+  outline: 4px solid #4285f4;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4285f4;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.img-box {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-box img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.img-box.selected img {
+  transform: scale(0.92); /* zoom out dikit */
+}
+
+/* Lingkaran */
+.check {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid #1a73e8;
+  background: rgba(255,255,255,0.95);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.2s ease;
+}
+
+/* Centang */
+.check::after {
+  content: "✔";
+  color: #1a73e8;
+  font-size: 16px;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+/* Aktif */
+.img-box.selected .check {
+  opacity: 1;
+  transform: scale(1);
+}
+.captcha-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.icons {
+  display: flex;
+  gap: 12px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #f9f9f9;
+}
+
+.icon:hover {
+  background: #e8f0fe;
+  border-color: #1a73e8;
+  color: #1a73e8;
+  transform: rotate(10deg);
+}
+
+/* Tombol verify */
+.verify-btn {
+  padding: 4px 10px;        /* lebih kecil */
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 2px;       /* tajam kayak Google */
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  height: 30px;
+}
+
+.verify-btn:hover {
+  background: #1666cc;
+}
