@@ -4,10 +4,12 @@ body {
 }
 
 .captcha-box {
-  width: 360px;
+  width: 100%;
+  max-width: 420px;   /* gede di HP, tetap rapi di desktop */
   background: #fff;
-  margin: 50px auto;
+  margin: 20px auto;
   border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 .header {
